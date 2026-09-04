@@ -23,7 +23,7 @@ export const projects: Project[] = [
     description:
       "Full-cycle machine learning on the OASIS-3 longitudinal multimodal neuroimaging dataset — 1,378 participants, 277 MCI patients, a working cohort of 92 after strict cohort definition — forecasting conversion from Mild Cognitive Impairment to Alzheimer's Disease. Integrated 10+ clinical, cognitive, neuroimaging and biomarker files into a unified session- and patient-level dataset. Led exploratory analysis and QA across demographics, CDR and 107 cognitive-assessment variables, building a validated data dictionary against official clinical documentation and resolving encoding errors, out-of-range values and structured missingness. Developed an automated clustering pipeline using exact patient-matching to identify cognitive-test sub-batteries, reducing dimensionality and driving reproducible feature selection. Built and evaluated classification and survival models with patient-level GroupKFold cross-validation and Optuna tuning, and applied SHAP to identify the strongest predictive biomarkers — hippocampal volume, CDR, MMSE. Prototyped a Streamlit clinical decision-support interface returning conversion-risk scores, feature-importance visualisations and downloadable PDF reports, informed by a structured requirements questionnaire run with medical professionals.",
     tags: ["Python", "survival analysis", "LSTM", "SHAP", "Streamlit", "longitudinal data"],
-    image: "/images/projects/alzheimers.jpg",
+    image: "/images/projects/alzheimers.png",
     featured: true,
   },
   {
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     description:
       "Fully interactive dashboard over 503,000+ collision and 920,000+ vehicle records comparing the spatial and temporal safety profiles of electric and internal-combustion vehicles. Built a 3×3 bivariate choropleth, a 100% normalised speed-zone line chart, and an animated 20-quarter time-series with motion trails. Handled inner joins, LOD expressions, window percentiles and null-handling logic to keep the dashboard stable under multi-layered geographic cross-filtering. Found that EVs carry a 42% lower overall fatality rate, but 72% of their severe collisions concentrate in 20–30mph urban pedestrian zones — a clear policy target.",
     tags: ["Tableau", "geospatial", "LOD expressions", "policy analysis"],
-    image: "/images/projects/ev-ice-safety.jpg",
+    image: "/images/projects/ev-ice-safety.png",
     featured: true,
   },
   {
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     description:
       "Screening classifier built on a 253,000-record US population health dataset. Corrected an 84% negative class imbalance with cost-sensitive weighting and precision–recall threshold optimisation to produce a model usable in a real screening context. Identified a statistically significant reversal in the BMI–sex relationship across diabetes groups — men carry higher BMI when healthy, women when diabetic — supporting sex-specific screening thresholds. Quantified that lower-income smokers face double the health risk of higher-income smokers, and translated the findings into a ranked clinician intervention framework. Assessed the disproportionate burden false-positive results place on lower-income patients as part of the analytical design.",
     tags: ["R", "Random Forest", "imbalanced data", "health equity"],
-    image: "/images/projects/diabetes-risk.jpg",
+    image: "/images/projects/diabetes-risk.png",
     featured: true,
   },
   {
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     description:
       "A3-format magazine-style dashboard mapping housing tenure, race and educational attainment across London. Combined macro-level treemaps, box plots and un-aggregated scatter plots to expose structural inequalities. Applied Grammar of Graphics principles to encode categorical data with unified visual variables and a single legend, cutting cognitive load for a public audience.",
     tags: ["Tableau", "census data", "information design"],
-    image: "/images/projects/london-housing.jpg",
+    image: "/images/projects/london-housing.png",
     featured: false,
   },
   {
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     description:
       "Analysis of a nine-figure annual public spend across 16 directorates. Built interactive KPI dashboards with advanced PivotTables and slicers to visualise temporal trends and supplier payment distributions. Surfaced expenditure concentration and quarterly volatility as headline KPIs, plus financial anomalies and beneficiary dependencies in the payment data. Delivered as a business report and an executive PowerPoint briefing.",
     tags: ["Excel", "PivotTables", "public finance", "KPI reporting"],
-    image: "/images/projects/birmingham-expenditure.jpg",
+    image: "/images/projects/birmingham-expenditure.png",
     featured: false,
   },
   {
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     description:
       "Led a technical research group analysing the relationship between energy production and environmental policy failure from 1965 to 2022, focused on the socio-economic challenges of Arctic amplification. Processed multi-decade datasets in Tidyverse and Quarto, generating visualisations mapping CO₂ emissions against temperature anomalies. Delegated data cleaning, wrangling, coding and slide generation across the team, and translated the technical output into a presentation for both technical and non-technical stakeholders.",
     tags: ["R", "Quarto", "time-series", "team lead"],
-    image: "/images/projects/canadian-paradox.jpg",
+    image: "/images/projects/canadian-paradox.png",
     featured: false,
   },
   {
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     description:
       "Directed a four-person team through a business simulation for a fictional financial consultancy, designing algorithmic models to simulate market volatility and forecast asset-price trajectories. Applied geometric Brownian motion and ran Monte Carlo simulations over 1,000,000 iterations of daily price movements to forecast final asset values with high statistical confidence. Audited results against historical market benchmarks and produced a report evaluating the risk profile of the instruments.",
     tags: ["Python", "Monte Carlo", "stochastic modelling", "team lead"],
-    image: "/images/projects/stochastic-modelling.jpg",
+    image: "/images/projects/stochastic-modelling.png",
     featured: false,
   },
 ];

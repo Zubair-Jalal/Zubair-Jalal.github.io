@@ -11,7 +11,7 @@ export const profile: Profile = {
   linkedinUrl: "https://linkedin.com/in/zubair-jalal",
   githubUrl: "https://github.com/Zubair-Jalal",
   cvPath: "/cv/zubair-jalal-cv.pdf",
-  portraitPath: "/images/portrait.jpg",
+  portraitPath: "/images/portrait.jpeg",
 };
 
 export const homeStats = [

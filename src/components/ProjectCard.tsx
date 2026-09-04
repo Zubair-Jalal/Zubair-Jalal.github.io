@@ -13,14 +13,18 @@ export function ProjectCard({ project }: { project: Project }) {
         project.featured ? "md:col-span-2 md:flex-row" : ""
       }`}
     >
-      <div className={`relative aspect-[16/10] w-full ${project.featured ? "md:w-2/5" : ""}`}>
+      <div
+        className={`relative h-56 w-full shrink-0 bg-hairline/15 p-3 sm:h-64 ${
+          project.featured ? "md:h-auto md:w-2/5" : ""
+        }`}
+      >
         <ImageWithFallback
           src={project.image}
           alt={`Screenshot from ${project.title}`}
           fallbackLabel="Screenshot coming soon"
           fill
           sizes="(min-width: 768px) 50vw, 100vw"
-          className="object-cover"
+          className="object-contain"
         />
       </div>
 
