@@ -9,7 +9,7 @@ export const education: EducationEntry[] = [
     endDate: "Sep 2026",
     details: [
       "On track for Distinction.",
-      "Botswana Top Achiever Scholarship — full government scholarship awarded to the nation's highest performers.",
+      "Botswana Top Achiever Scholarship: full government scholarship awarded to the nation's highest performers.",
       "Ranked #1 of cohort in Excel for Data Science and #3 in Statistics for Data Science.",
     ],
   },

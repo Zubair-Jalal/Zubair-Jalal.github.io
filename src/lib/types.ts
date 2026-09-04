@@ -9,6 +9,7 @@ export interface Profile {
   githubUrl: string;
   cvPath: string;
   portraitPath: string;
+  ogImagePath: string;
 }
 
 export interface EducationEntry {

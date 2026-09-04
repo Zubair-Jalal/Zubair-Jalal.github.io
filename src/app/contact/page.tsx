@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description: `Get in touch with ${profile.name}.`,
   openGraph: {
-    title: `Contact — ${profile.name}`,
+    title: `Contact | ${profile.name}`,
     description: `Get in touch with ${profile.name}.`,
   },
 };
@@ -41,7 +41,7 @@ export default function ContactPage() {
     <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20">
       <h1 className="font-display text-4xl font-medium text-ink">Contact</h1>
       <p className="mt-3 max-w-[62ch] text-base leading-relaxed text-ink/90">
-        This site is statically hosted, so there is no contact form here — a broken form is
+        This site is statically hosted, so there is no contact form here. A broken form is
         worse than none. Email is the fastest way to reach me.
       </p>
 

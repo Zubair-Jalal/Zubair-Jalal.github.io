@@ -23,16 +23,16 @@ const siteUrl = "https://zubair-jalal.github.io";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${profile.name} — ${profile.headline}`,
-    template: `%s — ${profile.name}`,
+    default: `${profile.name} | ${profile.headline}`,
+    template: `%s | ${profile.name}`,
   },
   description: profile.positioning,
   openGraph: {
-    title: `${profile.name} — ${profile.headline}`,
+    title: `${profile.name} | ${profile.headline}`,
     description: profile.positioning,
     url: siteUrl,
     siteName: profile.name,
-    images: [{ url: profile.portraitPath }],
+    images: [{ url: profile.ogImagePath, width: 1200, height: 630, alt: `${profile.name}, ${profile.headline}` }],
     locale: "en_GB",
     type: "website",
   },

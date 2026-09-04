@@ -79,11 +79,10 @@ function CertificationRow({ cert }: { cert: Certification }) {
 
   return (
     <article className="rounded border border-hairline p-5">
-      <div className="flex flex-wrap items-start justify-between gap-2">
-        <h3 className="font-display text-lg font-medium text-ink">{cert.name}</h3>
-        <span className="whitespace-nowrap text-sm text-slate">{cert.dateEarned}</span>
-      </div>
-      <p className="mt-0.5 text-sm text-slate">{cert.issuer}</p>
+      <h3 className="font-display text-lg font-medium text-ink">{cert.name}</h3>
+      <p className="mt-0.5 text-sm text-slate">
+        {cert.dateEarned}, {cert.issuer}
+      </p>
 
       <p className="mt-3 text-sm leading-relaxed text-ink/90">{cert.description}</p>
 

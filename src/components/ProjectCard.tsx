@@ -22,8 +22,8 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
           src={project.image}
           alt={`Screenshot from ${project.title}`}
           fallbackLabel="Screenshot coming soon"
-          fill
           sizes="(min-width: 768px) 50vw, 100vw"
+          widths={[640, 1280]}
           className="object-contain"
           priority={priority}
         />

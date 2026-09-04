@@ -4,14 +4,15 @@ export const profile: Profile = {
   name: "Zubair Mosimanegape Jalal",
   headline: "Data Scientist",
   positioning:
-    "MSc Data Science candidate at the University of Leicester, on track for Distinction, with a BSc in Mathematics and Economics and two years building end-to-end machine learning in industry — from problem definition through modelling to deployment and drift monitoring.",
+    "MSc Data Science candidate at the University of Leicester, on track for Distinction, with a BSc in Mathematics and Economics and two years building end-to-end machine learning in industry, from problem definition through modelling to deployment and drift monitoring.",
   location: "Leicester, UK",
-  status: "MSc Data Science with Industry, University of Leicester — graduating 2026",
+  status: "MSc Data Science with Industry, University of Leicester (graduating 2026)",
   email: "zubair.jalal@outlook.com",
   linkedinUrl: "https://linkedin.com/in/zubair-jalal",
   githubUrl: "https://github.com/Zubair-Jalal",
   cvPath: "/cv/zubair-jalal-cv.pdf",
   portraitPath: "/images/portrait.jpeg",
+  ogImagePath: "/images/og-image.jpg",
 };
 
 export const homeStats = [

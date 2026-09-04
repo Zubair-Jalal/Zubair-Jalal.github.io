@@ -11,7 +11,7 @@ export const experience: ExperienceEntry[] = [
     summary:
       "Two-year remote engagement delivering machine-learning fault detection and BI across a solar and tech company's installed solar fleet, covering model development, data pipelines, explainability and ongoing monitoring.",
     achievements: [
-      "Built a two-stage fault-detection system in Python — an XGBoost baseline on engineered telemetry features, followed by an autoencoder for anomaly detection — monitoring 200 live solar systems across inverter, battery and panel data.",
+      "Built a two-stage fault-detection system in Python (an XGBoost baseline on engineered telemetry features, followed by an autoencoder for anomaly detection), monitoring 200 live solar systems across inverter, battery and panel data.",
       "Raised the fault-catch rate from 78% to 86% and cut average downtime per fault from 3.5 hours to 2 by surfacing faults earlier for proactive maintenance.",
       "Engineered SQL pipelines aggregating multi-source telemetry and CRM data, and applied SHAP to surface the key underperformance and fault drivers for the operations team.",
       "Built Power BI dashboards for BAU monitoring of energy production, system health and commercial KPIs, and monitored deployed models for performance drift over time.",

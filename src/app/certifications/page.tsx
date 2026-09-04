@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Certifications & Credentials",
   description: `Job simulations and academic distinctions earned by ${profile.name}.`,
   openGraph: {
-    title: `Certifications & Credentials — ${profile.name}`,
+    title: `Certifications & Credentials | ${profile.name}`,
     description: `Job simulations and academic distinctions earned by ${profile.name}.`,
   },
 };

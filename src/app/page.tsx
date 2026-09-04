@@ -56,8 +56,8 @@ export default function Home() {
             src={profile.portraitPath}
             alt={`Portrait of ${profile.name}`}
             fallbackLabel="Portrait coming soon"
-            fill
             sizes="224px"
+            widths={[300, 600]}
             className="object-cover"
             priority
           />

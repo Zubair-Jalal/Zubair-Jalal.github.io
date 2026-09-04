@@ -45,7 +45,7 @@ export const skills: SkillGroup[] = [
     skills: [
       "Power BI",
       "Tableau (LODs, dashboards, geospatial)",
-      "Excel (advanced — PivotTables, slicers, KPI dashboards)",
+      "Excel (advanced: PivotTables, slicers, KPI dashboards)",
     ],
   },
 ];
