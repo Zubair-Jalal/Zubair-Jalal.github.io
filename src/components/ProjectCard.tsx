@@ -3,7 +3,7 @@ import { GitHubIcon } from "@/components/icons";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { Project } from "@/lib/types";
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project, priority = false }: { project: Project; priority?: boolean }) {
   const dateLabel =
     project.startDate === project.endDate ? project.startDate : `${project.startDate} – ${project.endDate}`;
 
@@ -25,6 +25,7 @@ export function ProjectCard({ project }: { project: Project }) {
           fill
           sizes="(min-width: 768px) 50vw, 100vw"
           className="object-contain"
+          priority={priority}
         />
       </div>
 
