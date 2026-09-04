@@ -19,7 +19,7 @@ export function CTALink({
   icon,
 }: CTALinkProps) {
   const base =
-    "inline-flex items-center gap-2 rounded px-5 py-2.5 text-sm font-medium transition-colors";
+    "inline-flex items-center gap-2 rounded-control px-5 py-2.5 text-sm font-medium transition-colors";
   const styles =
     variant === "primary"
       ? "bg-teal text-paper hover:bg-ink"

@@ -4,6 +4,7 @@
 :root {
   --color-ink: #0f1b2d;
   --color-paper: #faf9f6;
+  --color-page-bg: #ececea;
   --color-teal: #1b4b5a;
   --color-slate: #5b6b73;
   --color-rust: #c9451a;
@@ -13,12 +14,19 @@
 @theme inline {
   --color-ink: var(--color-ink);
   --color-paper: var(--color-paper);
+  --color-page-bg: var(--color-page-bg);
   --color-teal: var(--color-teal);
   --color-slate: var(--color-slate);
   --color-rust: var(--color-rust);
   --color-hairline: var(--color-hairline);
   --font-display: var(--font-newsreader), Georgia, serif;
   --font-sans: var(--font-plex-sans), Arial, Helvetica, sans-serif;
+
+  --radius-card: 14px;
+  --radius-control: 8px;
+
+  --shadow-card: 0 1px 2px rgba(15, 27, 45, 0.04), 0 4px 16px rgba(15, 27, 45, 0.06);
+  --shadow-card-hover: 0 2px 6px rgba(15, 27, 45, 0.08), 0 10px 28px rgba(15, 27, 45, 0.12);
 }
 
 html {
@@ -40,7 +48,7 @@ html {
 }
 
 body {
-  background: var(--color-paper);
+  background: var(--color-page-bg);
   color: var(--color-ink);
   font-family: var(--font-sans);
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectsGrid } from "@/components/ProjectsGrid";
 import { profile } from "@/content/profile";
 import { projects } from "@/content/projects";
 
@@ -21,11 +21,7 @@ export default function ProjectsPage() {
         applied statistics, each taken from problem definition through to a finished result.
       </p>
 
-      <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
-        {projects.map((project, index) => (
-          <ProjectCard key={project.id} project={project} priority={index === 0} />
-        ))}
-      </div>
+      <ProjectsGrid projects={projects} />
     </div>
   );
 }

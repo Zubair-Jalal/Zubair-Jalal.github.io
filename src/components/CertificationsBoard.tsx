@@ -33,7 +33,7 @@ export function CertificationsBoard({ certifications, categories }: Props) {
               type="button"
               aria-pressed={isActive}
               onClick={() => setFilter(value)}
-              className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
+              className={`rounded-control border px-4 py-1.5 text-sm font-medium transition-colors ${
                 isActive
                   ? "border-teal bg-teal text-paper"
                   : "border-hairline text-ink hover:border-teal hover:text-teal"
@@ -78,7 +78,7 @@ function CertificationRow({ cert }: { cert: Certification }) {
       : null;
 
   return (
-    <article className="rounded border border-hairline p-5">
+    <article className="rounded-card bg-paper p-5 shadow-card">
       <h3 className="font-display text-lg font-medium text-ink">{cert.name}</h3>
       <p className="mt-0.5 text-sm text-slate">
         {cert.dateEarned}, {cert.issuer}
@@ -89,7 +89,7 @@ function CertificationRow({ cert }: { cert: Certification }) {
       <div className="mt-3 flex flex-wrap items-center gap-4 text-sm">
         {cert.credentialId && <span className="text-slate">ID: {cert.credentialId}</span>}
         {expired && (
-          <span className="rounded-full border border-rust px-2.5 py-0.5 text-xs font-medium text-rust">
+          <span className="rounded-control border border-rust px-2.5 py-0.5 text-xs font-medium text-rust">
             Expired
           </span>
         )}

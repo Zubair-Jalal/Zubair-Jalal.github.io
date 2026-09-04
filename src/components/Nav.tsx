@@ -17,6 +17,7 @@ export function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [priorPathname, setPriorPathname] = useState(pathname);
+  const [scrolled, setScrolled] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   if (pathname !== priorPathname) {
@@ -36,8 +37,19 @@ export function Nav() {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
+  useEffect(() => {
+    function onScroll() {
+      setScrolled(window.scrollY > 4);
+    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-40 border-b border-hairline bg-paper/95 backdrop-blur">
+    <header
+      className={`sticky top-0 z-40 bg-paper transition-shadow duration-150 ${scrolled ? "shadow-card" : ""}`}
+    >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 sm:px-6">
         <Link href="/" className="font-display text-lg font-medium text-ink">
           Zubair Jalal
@@ -70,7 +82,7 @@ export function Nav() {
         <button
           ref={menuButtonRef}
           type="button"
-          className="flex items-center justify-center rounded p-2 text-ink md:hidden"
+          className="flex items-center justify-center rounded-control p-2 text-ink md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -90,7 +102,7 @@ export function Nav() {
                   <Link
                     href={link.href}
                     aria-current={isActive ? "page" : undefined}
-                    className={`block rounded px-2 py-2 text-base ${
+                    className={`block rounded-control px-2 py-2 text-base ${
                       isActive ? "text-teal font-medium" : "text-ink"
                     }`}
                   >

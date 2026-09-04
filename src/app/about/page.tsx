@@ -21,7 +21,7 @@ export default function AboutPage() {
       <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-[1fr_240px]">
         <p className="max-w-[70ch] text-base leading-relaxed text-ink/90">{profile.positioning}</p>
 
-        <dl className="flex flex-col gap-4 rounded border border-hairline p-5 text-sm">
+        <dl className="flex flex-col gap-4 rounded-card bg-paper p-5 text-sm shadow-card">
           <div>
             <dt className="text-slate">Location</dt>
             <dd className="mt-0.5 font-medium text-ink">{profile.location}</dd>
@@ -37,9 +37,9 @@ export default function AboutPage() {
         <h2 className="font-display text-2xl font-medium text-ink">Experience</h2>
         <div className="mt-2 border-t border-hairline" />
 
-        <div className="mt-8 flex flex-col gap-10">
+        <div className="mt-8 flex flex-col gap-6">
           {experience.map((role) => (
-            <article key={role.id}>
+            <article key={role.id} className="rounded-card bg-paper p-6 shadow-card">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="font-display text-xl font-medium text-ink">{role.role}</h3>
                 <span className="text-sm text-slate">
@@ -67,9 +67,9 @@ export default function AboutPage() {
         <h2 className="font-display text-2xl font-medium text-ink">Education</h2>
         <div className="mt-2 border-t border-hairline" />
 
-        <div className="mt-8 flex flex-col gap-8">
+        <div className="mt-8 flex flex-col gap-6">
           {education.map((entry) => (
-            <article key={entry.id}>
+            <article key={entry.id} className="rounded-card bg-paper p-6 shadow-card">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="font-display text-xl font-medium text-ink">{entry.degree}</h3>
                 <span className="text-sm text-slate">
@@ -104,15 +104,15 @@ export default function AboutPage() {
         <h2 className="font-display text-2xl font-medium text-ink">Core skills</h2>
         <div className="mt-2 border-t border-hairline" />
 
-        <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {skills.map((group) => (
-            <div key={group.id}>
+            <div key={group.id} className="rounded-card bg-paper p-6 shadow-card">
               <h3 className="text-sm font-medium text-slate">{group.category}</h3>
               <ul className="mt-3 flex flex-wrap gap-1.5">
                 {group.skills.map((skill) => (
                   <li
                     key={skill}
-                    className="rounded-full border border-hairline px-3 py-1 text-xs text-ink/90"
+                    className="rounded-control border border-hairline px-3 py-1 text-xs text-ink/90"
                   >
                     {skill}
                   </li>

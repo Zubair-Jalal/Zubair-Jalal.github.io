@@ -79,7 +79,7 @@ export default function Home() {
           <a
             key={card.href}
             href={card.href}
-            className="flex flex-col gap-2 rounded border border-hairline p-5 transition-colors hover:border-teal"
+            className="flex flex-col gap-2 rounded-card bg-paper p-5 shadow-card transition-shadow duration-150 hover:shadow-card-hover"
           >
             <h2 className="font-display text-lg font-medium text-ink">{card.title}</h2>
             <p className="text-sm text-slate">{card.description}</p>
