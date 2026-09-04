@@ -31,7 +31,7 @@ export function ProjectCard({ project }: { project: Project }) {
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div>
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h3 className="font-display text-xl font-medium text-ink">{project.title}</h3>
+            <h2 className="font-display text-xl font-medium text-ink">{project.title}</h2>
             <span className="whitespace-nowrap text-sm text-slate">{dateLabel}</span>
           </div>
           <p className="mt-1 text-sm text-slate">{project.context}</p>
