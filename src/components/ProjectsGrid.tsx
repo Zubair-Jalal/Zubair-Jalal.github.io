@@ -68,7 +68,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
 
   return (
     <>
-      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
         {projects.map((project, index) => (
           <button
             key={project.id}
@@ -81,7 +81,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
                 src={project.image}
                 alt={`Screenshot from ${project.title}`}
                 fallbackLabel="Screenshot coming soon"
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                sizes="(min-width: 640px) 50vw, 100vw"
                 widths={[640, 1280]}
                 className="object-cover"
                 priority={index === 0}

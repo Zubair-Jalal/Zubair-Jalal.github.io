@@ -41,8 +41,7 @@ export default function ContactPage() {
     <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20">
       <h1 className="font-display text-4xl font-medium text-ink">Contact</h1>
       <p className="mt-3 max-w-[62ch] text-base leading-relaxed text-ink/90">
-        This site is statically hosted, so there is no contact form here. A broken form is
-        worse than none. Email is the fastest way to reach me.
+        Please get in touch through any of the channels below.
       </p>
 
       <div className="mt-10 flex flex-col gap-4 sm:max-w-md">
@@ -52,7 +51,7 @@ export default function ContactPage() {
             href={channel.href}
             target={channel.external ? "_blank" : undefined}
             rel={channel.external ? "noreferrer" : undefined}
-            className="flex items-center gap-4 rounded border border-hairline p-4 transition-colors hover:border-teal"
+            className="flex items-center gap-4 rounded-card bg-paper p-4 shadow-card transition-shadow duration-150 hover:shadow-card-hover"
           >
             <channel.icon aria-hidden="true" size={20} className="shrink-0 text-teal" />
             <span>
