@@ -51,12 +51,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative mx-auto h-48 w-48 shrink-0 overflow-hidden rounded-full sm:h-56 sm:w-56">
+        <div className="relative mx-auto h-64 w-64 shrink-0 overflow-hidden rounded-full sm:h-72 sm:w-72 md:h-80 md:w-80">
           <ImageWithFallback
             src={profile.portraitPath}
             alt={`Portrait of ${profile.name}`}
             fallbackLabel="Portrait coming soon"
-            sizes="224px"
+            sizes="(min-width: 768px) 320px, (min-width: 640px) 288px, 256px"
             widths={[300, 600]}
             className="object-cover"
             priority

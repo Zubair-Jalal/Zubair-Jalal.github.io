@@ -64,7 +64,7 @@ export default function ContactPage() {
         <a
           href={profile.cvPath}
           download
-          className="flex items-center gap-4 rounded border border-hairline p-4 transition-colors hover:border-teal"
+          className="flex items-center gap-4 rounded-card bg-paper p-4 shadow-card transition-shadow duration-150 hover:shadow-card-hover"
         >
           <FileDown aria-hidden="true" size={20} className="shrink-0 text-teal" />
           <span>
