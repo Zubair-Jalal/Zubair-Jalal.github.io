@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FileText, ExternalLink } from "lucide-react";
+import { FileText, ExternalLink, Image as ImageIcon } from "lucide-react";
 import type { Certification, CertificationCategory } from "@/lib/types";
 import { parseApproxDate, isPast } from "@/lib/dates";
 
@@ -71,10 +71,13 @@ export function CertificationsBoard({ certifications, categories }: Props) {
 
 function CertificationRow({ cert }: { cert: Certification }) {
   const expired = cert.expiryDate ? isPast(cert.expiryDate) : false;
+  const isImageFile = cert.certificateFile ? /\.(png|jpe?g)$/i.test(cert.certificateFile) : false;
   const link = cert.verificationUrl
     ? { href: cert.verificationUrl, label: "Verify credential", icon: <ExternalLink aria-hidden="true" size={14} /> }
     : cert.certificateFile
-      ? { href: cert.certificateFile, label: "View certificate (PDF)", icon: <FileText aria-hidden="true" size={14} /> }
+      ? isImageFile
+        ? { href: cert.certificateFile, label: "View evidence", icon: <ImageIcon aria-hidden="true" size={14} /> }
+        : { href: cert.certificateFile, label: "View certificate (PDF)", icon: <FileText aria-hidden="true" size={14} /> }
       : null;
 
   return (

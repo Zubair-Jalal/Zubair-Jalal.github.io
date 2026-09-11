@@ -34,7 +34,7 @@ export const education: EducationEntry[] = [
     institution: "Livingstone Kolobeng College, Botswana",
     startDate: "2016",
     endDate: "2021",
-    details: ["Mathematics (A), Economics (A), Physics (A), Business (B)."],
+    details: ["Mathematics (A), Economics (A), Physics (A)."],
   },
 ];
 
