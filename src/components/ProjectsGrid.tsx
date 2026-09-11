@@ -76,14 +76,14 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
             onClick={(event) => open(project, event)}
             className="overflow-hidden rounded-card bg-paper text-left shadow-card transition-shadow duration-150 hover:shadow-card-hover"
           >
-            <div className="relative aspect-[3/2] w-full">
+            <div className="relative aspect-[3/2] w-full bg-hairline/15 p-3">
               <ImageWithFallback
                 src={project.image}
                 alt={`Screenshot from ${project.title}`}
                 fallbackLabel="Screenshot coming soon"
                 sizes="(min-width: 640px) 50vw, 100vw"
                 widths={[640, 1280]}
-                className="object-cover"
+                className="object-contain"
                 priority={index === 0}
               />
             </div>

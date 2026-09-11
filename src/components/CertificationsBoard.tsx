@@ -87,7 +87,7 @@ function CertificationRow({ cert }: { cert: Certification }) {
         {cert.dateEarned}, {cert.issuer}
       </p>
 
-      <p className="mt-3 text-sm leading-relaxed text-ink/90">{cert.description}</p>
+      <p className="mt-3 max-w-[70ch] text-sm leading-relaxed text-ink/90">{cert.description}</p>
 
       <div className="mt-3 flex flex-wrap items-center gap-4 text-sm">
         {cert.credentialId && <span className="text-slate">ID: {cert.credentialId}</span>}

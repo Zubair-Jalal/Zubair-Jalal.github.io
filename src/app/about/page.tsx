@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20">
+    <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20">
       <h1 className="font-display text-4xl font-medium text-ink">About</h1>
 
       <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-[1fr_240px]">
@@ -50,7 +50,7 @@ export default function AboutPage() {
                 {role.organisation} ({role.location})
               </p>
               <p className="mt-3 max-w-[70ch] text-sm leading-relaxed text-ink/90">{role.summary}</p>
-              <ul className="mt-3 flex flex-col gap-2">
+              <ul className="mt-3 flex max-w-[70ch] flex-col gap-2">
                 {role.achievements.map((item) => (
                   <li key={item} className="flex gap-2 text-sm leading-relaxed text-ink/90">
                     <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-slate" aria-hidden="true" />
@@ -79,7 +79,7 @@ export default function AboutPage() {
               <p className="text-sm text-slate">{entry.institution}</p>
 
               {entry.details.length > 0 && (
-                <ul className="mt-3 flex flex-col gap-2">
+                <ul className="mt-3 flex max-w-[70ch] flex-col gap-2">
                   {entry.details.map((detail) => (
                     <li key={detail} className="flex gap-2 text-sm leading-relaxed text-ink/90">
                       <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-slate" aria-hidden="true" />

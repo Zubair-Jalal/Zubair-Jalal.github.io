@@ -50,7 +50,7 @@ export function Nav() {
     <header
       className={`sticky top-0 z-40 bg-paper transition-shadow duration-150 ${scrolled ? "shadow-card" : ""}`}
     >
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 sm:px-6">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
         <Link href="/" className="font-display text-lg font-medium text-ink">
           Zubair Jalal
         </Link>
@@ -94,7 +94,7 @@ export function Nav() {
 
       {open && (
         <nav id="mobile-menu" aria-label="Primary" className="border-t border-hairline md:hidden">
-          <ul className="mx-auto flex max-w-5xl flex-col gap-1 px-4 py-3 sm:px-6">
+          <ul className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 sm:px-6">
             {links.map((link) => {
               const isActive = pathname === link.href;
               return (
