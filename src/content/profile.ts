@@ -2,9 +2,9 @@ import type { Profile } from "@/lib/types";
 
 export const profile: Profile = {
   name: "Zubair Mosimanegape Jalal",
-  headline: "Data Scientist",
+  headline: "Data Scientist & Analyst",
   positioning:
-    "MSc Data Science candidate at the University of Leicester, on track for Distinction, with a BSc in Mathematics and Economics and two years building end-to-end machine learning in industry, from problem definition through modelling to deployment and drift monitoring.",
+    "MSc Data Science candidate at the University of Leicester, on track for Distinction, with a BSc in Mathematics and Economics. Two years building end-to-end machine learning in industry and applying quantitative analysis across finance, risk and public-sector data, equally suited to data science, analyst or finance/risk analytics roles.",
   location: "Leicester, UK",
   status: "MSc Data Science with Industry, University of Leicester (graduating 2026)",
   email: "zubair.jalal@outlook.com",

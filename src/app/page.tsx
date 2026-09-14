@@ -39,7 +39,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <p className="mt-6 max-w-[62ch] text-base leading-relaxed text-ink/90">{profile.positioning}</p>
+          <p className="mt-6 max-w-[80ch] text-lg leading-relaxed text-ink/90">{profile.positioning}</p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <CTALink href={profile.cvPath} download>
@@ -82,13 +82,13 @@ export default function Home() {
             className="flex flex-col gap-2 rounded-card bg-paper p-5 shadow-card transition-shadow duration-150 hover:shadow-card-hover"
           >
             <h2 className="font-display text-lg font-medium text-ink">{card.title}</h2>
-            <p className="text-sm text-slate">{card.description}</p>
+            <p className="text-base text-slate">{card.description}</p>
           </a>
         ))}
       </section>
 
       <section className="mt-16 flex flex-col items-start gap-3 border-t border-hairline pt-8 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-base text-ink/90">
+        <p className="text-lg text-ink/90">
           Fastest way to reach me: <a href={`mailto:${profile.email}`} className="font-medium text-teal">{profile.email}</a>
         </p>
         <CTALink href="/contact" variant="secondary">

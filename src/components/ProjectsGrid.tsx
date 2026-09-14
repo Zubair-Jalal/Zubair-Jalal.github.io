@@ -87,7 +87,7 @@ export function ProjectsGrid({ projects }: { projects: Project[] }) {
                 priority={index === 0}
               />
             </div>
-            <span className="block px-4 py-3 font-sans text-sm font-medium text-ink">{project.title}</span>
+            <span className="block px-4 py-3 font-sans text-base font-medium text-ink">{project.title}</span>
           </button>
         ))}
       </div>
@@ -155,7 +155,7 @@ function ProjectModal({
           {project.tools.join(", ")}
         </p>
 
-        <p className="mt-4 text-sm leading-relaxed text-ink/90">{project.description}</p>
+        <p className="mt-4 text-base leading-relaxed text-ink/90">{project.description}</p>
 
         <div className="mt-4 flex flex-wrap gap-1.5">
           {project.tags.map((tag) => (

@@ -19,9 +19,9 @@ export default function AboutPage() {
       <h1 className="font-display text-4xl font-medium text-ink">About</h1>
 
       <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-[1fr_240px]">
-        <p className="max-w-[70ch] text-base leading-relaxed text-ink/90">{profile.positioning}</p>
+        <p className="max-w-[80ch] text-lg leading-relaxed text-ink/90">{profile.positioning}</p>
 
-        <dl className="flex flex-col gap-4 rounded-card bg-paper p-5 text-sm shadow-card">
+        <dl className="flex flex-col gap-4 rounded-card bg-paper p-5 text-base shadow-card">
           <div>
             <dt className="text-slate">Location</dt>
             <dd className="mt-0.5 font-medium text-ink">{profile.location}</dd>
@@ -49,10 +49,10 @@ export default function AboutPage() {
               <p className="text-sm text-slate">
                 {role.organisation} ({role.location})
               </p>
-              <p className="mt-3 max-w-[70ch] text-sm leading-relaxed text-ink/90">{role.summary}</p>
-              <ul className="mt-3 flex max-w-[70ch] flex-col gap-2">
+              <p className="mt-3 max-w-[80ch] text-base leading-relaxed text-ink/90">{role.summary}</p>
+              <ul className="mt-3 flex max-w-[80ch] flex-col gap-2">
                 {role.achievements.map((item) => (
-                  <li key={item} className="flex gap-2 text-sm leading-relaxed text-ink/90">
+                  <li key={item} className="flex gap-2 text-base leading-relaxed text-ink/90">
                     <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-slate" aria-hidden="true" />
                     <span>{item}</span>
                   </li>
@@ -79,9 +79,9 @@ export default function AboutPage() {
               <p className="text-sm text-slate">{entry.institution}</p>
 
               {entry.details.length > 0 && (
-                <ul className="mt-3 flex max-w-[70ch] flex-col gap-2">
+                <ul className="mt-3 flex max-w-[80ch] flex-col gap-2">
                   {entry.details.map((detail) => (
-                    <li key={detail} className="flex gap-2 text-sm leading-relaxed text-ink/90">
+                    <li key={detail} className="flex gap-2 text-base leading-relaxed text-ink/90">
                       <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-slate" aria-hidden="true" />
                       <span>{detail}</span>
                     </li>
@@ -90,7 +90,7 @@ export default function AboutPage() {
               )}
 
               {entry.modules && entry.modules.length > 0 && (
-                <p className="mt-3 text-sm text-ink/90">
+                <p className="mt-3 text-base text-ink/90">
                   <span className="text-slate">Key modules: </span>
                   {entry.modules.join(", ")}
                 </p>
@@ -125,7 +125,7 @@ export default function AboutPage() {
 
       <section className="mt-16 border-t border-hairline pt-8">
         <h2 className="font-display text-2xl font-medium text-ink">Beyond the work</h2>
-        <p className="mt-3 max-w-[70ch] text-sm leading-relaxed text-ink/90">{beyondTheWork}</p>
+        <p className="mt-3 max-w-[80ch] text-base leading-relaxed text-ink/90">{beyondTheWork}</p>
       </section>
     </div>
   );

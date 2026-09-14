@@ -105,7 +105,7 @@ async function buildOgImage() {
       </style>
       <text x="80" y="230" class="name">Zubair Mosimanegape</text>
       <text x="80" y="298" class="name">Jalal</text>
-      <text x="80" y="356" class="headline">Data Scientist</text>
+      <text x="80" y="356" class="headline">Data Scientist &amp; Analyst</text>
       <line x1="80" y1="400" x2="480" y2="400" stroke="${HAIRLINE}" stroke-width="2" />
       <text x="80" y="450" class="meta">MSc Data Science, University of Leicester</text>
       <text x="80" y="486" class="meta">BSc Mathematics and Economics, University of Liverpool</text>

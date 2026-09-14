@@ -16,7 +16,7 @@ export default function CertificationsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20">
       <h1 className="font-display text-4xl font-medium text-ink">Certifications & Credentials</h1>
-      <p className="mt-3 max-w-[62ch] text-base leading-relaxed text-ink/90">
+      <p className="mt-3 max-w-[80ch] text-lg leading-relaxed text-ink/90">
         Employer-designed job simulations completed through Forage, alongside academic
         distinctions earned during the MSc.
       </p>
