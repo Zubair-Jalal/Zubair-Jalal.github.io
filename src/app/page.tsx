@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative mx-auto h-64 w-64 shrink-0 overflow-hidden rounded-full sm:h-72 sm:w-72 md:h-80 md:w-80">
+        <div className="relative mx-auto h-80 w-64 shrink-0 overflow-hidden rounded-card shadow-card sm:h-[26rem] sm:w-72 md:h-[30rem] md:w-80">
           <ImageWithFallback
             src={profile.portraitPath}
             alt={`Portrait of ${profile.name}`}
